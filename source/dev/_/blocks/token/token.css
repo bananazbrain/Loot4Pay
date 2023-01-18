@@ -1,0 +1,80 @@
+.token {
+  padding: 116px 0 0;
+}
+.token__wrap {
+  width: 100%;
+  max-width: 1110px;
+  margin: 105px auto 0;
+}
+.token__info {
+  width: 100%;
+  max-width: 550px;
+  position: relative;
+}
+.token__info:before {
+  z-index: -1;
+  top: -220px;
+  left: -420px;
+  width: 768px;
+  height: 987px;
+  background: url("../../uploads/decor-2.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  content: "";
+}
+.token__item {
+  margin-bottom: 35px;
+}
+.token__item:last-child {
+  margin-bottom: 0;
+}
+.token__icon {
+  margin-bottom: 20px;
+}
+.token__name {
+  margin-bottom: 10px;
+}
+.token__text {
+  line-height: 26px;
+  color: var(--main-light);
+}
+.token__note {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  padding: 8px 12px 8px 7px;
+  margin-top: 22px;
+  border: 1px solid #554681;
+  border-radius: 80px;
+  color: #8375B4;
+  cursor: pointer;
+  display: inline-block;
+  transition: var(--transition);
+}
+.token__note u {
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 42px;
+  padding: 3px 8px;
+  margin-right: 7px;
+  color: var(--black);
+  background: var(--white);
+  text-transform: uppercase;
+}
+.token__note:hover {
+  color: #9E8ED9;
+  border-color: #9E8ED9;
+}
+.token__video {
+  width: 680px;
+  height: 680px;
+  right: 10px;
+  margin-top: -30px;
+  position: absolute;
+  pointer-events: none;
+}
+.token__video video {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+}
