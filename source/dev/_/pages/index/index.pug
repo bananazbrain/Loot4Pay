@@ -4,4 +4,84 @@ block vars
 		title = "Loot4Pay"
 
 block content
-	
+	.intro
+		.case
+			.intro__main.row
+				.intro__info
+					.intro__title.h1 #[h1 Marketplace for virtual in-game goods and services]
+					.intro__text A cutting-edge marketplace not only for in-game goods, including virtual items, currencies, artifacts, but also for services like mentoring, team-up with professionals, etc.
+					.intro__btns.row
+						.intro__btn.btn.--grad(href="") Whitepaper
+							.btn__border
+						.intro__btn.btn.--border(href="") Product
+							.btn__border
+				.intro__preview
+					.intro__video
+						img(src="_/uploads/video-img.jpg", alt="" width="622" height="352")
+					.intro__play
+						img(src="_/uploads/icons/play.svg", alt="")
+			.intro__games.games
+				.games__title.h3 #[h3 Building social metaverse network for gamers]
+				.games__subtitle Works with 200+ games
+				.games__list.row
+					mixin games(img)
+						.games__item
+							img(src=img, alt="" width="40" height="40")
+					+games('_/uploads/game-1.svg')
+					+games('_/uploads/game-2.svg')
+					+games('_/uploads/game-3.svg')
+					+games('_/uploads/game-4.svg')
+					+games('_/uploads/game-5.svg')
+					+games('_/uploads/game-6.svg')
+					+games('_/uploads/game-7.svg')
+					+games('_/uploads/game-8.svg')
+					+games('_/uploads/game-9.svg')
+					+games('_/uploads/game-10.svg')
+
+	.vision
+		.case
+			.vision__head.b-head
+				.b-head__top
+					.b-head__num #[span 1]
+				.b-head__title.h2.tac #[h2 Our Vision of «Play-to-earn»]
+				.b-head__text.tac Our marketplace gives players the opportunity to earn money on AAA games that are already firmly established on the  market. These games already have hundreds of millions of players enjoying the gameplay, making in-game goods and services tied to those games valuable. Making money on your favorite game with an already huge client base is much more efficient and enjoyable than making money on so-called play-to-earn casual games that are designed to extort money from users and are completely uninteresting.
+			.vision__main
+				.vision__example.ex.bg
+					.ex__top EXAMPLE
+					.ex__wrap.row
+						.ex__logo
+							img(src="_/uploads/vision-logo.svg", alt="")
+						.ex__info
+							.ex__price $ 170,000,000
+							.ex__text Average daily gold turnover in game					
+					.ex__bg.bg-img
+						img(src="_/uploads/vision-img.jpg", alt="")
+				.vision__table.table
+					.table__col
+						.table__title FEATURES
+						.table__list
+							.table__item Hundreds of millions of players
+							.table__item Interesting titles with compelling mechanics
+							.table__item Non-predatory monetization systems
+							.table__item Advanced in-game economies
+							.table__item Good reputation in the gaming community
+							.table__item Loyal player bases
+					.table__col
+						.table__title AAA GAMES MARKET
+						.table__list
+							.table__item.item-true
+							.table__item.item-true
+							.table__item.item-true
+							.table__item.item-true
+							.table__item.item-true
+							.table__item.item-true
+					.table__col
+						.table__title CASUAL PLAY-TO-EARN
+						.table__list
+							.table__item.item-false
+							.table__item.item-false
+							.table__item.item-false
+							.table__item.item-false
+							.table__item.item-false
+							.table__item.item-false
+
