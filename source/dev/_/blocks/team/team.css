@@ -1,5 +1,6 @@
 .team {
-  padding: 96px 0;
+  z-index: 1;
+  padding: 96px 0 116px;
   position: relative;
 }
 .team__main {
@@ -65,7 +66,7 @@
 }
 .team__bg {
   z-index: -1;
-  top: -208px;
+  top: -242px;
   left: 50%;
   transform: translateX(-50%);
   width: 1920px;
