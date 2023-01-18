@@ -42,8 +42,8 @@
   width: 260px;
   height: 150px;
   border-radius: 100%;
-  filter: blur(200px);
-  -webkit-filter: blur(200px);
+  filter: blur(220px);
+  -webkit-filter: blur(220px);
   position: absolute;
   content: "";
 }
