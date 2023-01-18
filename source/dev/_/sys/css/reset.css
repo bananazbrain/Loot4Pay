@@ -17,10 +17,10 @@ html, body {
 }
 
 body {
-  color: var(--black);
+  color: var(--white);
   font-size: var(--fz-main);
   font-family: var(--ff-main);
-  background: var(--white);
+  background: var(--main-dark);
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -49,7 +49,7 @@ table {
 }
 
 a {
-  color: var(--black);
+  color: var(--white);
   font-size: var(--fz-main);
   font-family: var(--ff-main);
   transition: var(--transition);

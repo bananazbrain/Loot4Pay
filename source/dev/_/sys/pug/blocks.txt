@@ -6,3 +6,31 @@ include ../../blocks/header/header
 +style('footer', 'blocks')
 include ../../blocks/footer/footer
 
+//- intro 
++style('intro', 'blocks')
+include ../../blocks/intro/intro
+
+//- vision 
++style('vision', 'blocks')
+include ../../blocks/vision/vision
+
+//- feat 
++style('feat', 'blocks')
+include ../../blocks/feat/feat
+
+//- token 
++style('token', 'blocks')
+include ../../blocks/token/token
+
+//- roadmap 
++style('roadmap', 'blocks')
+include ../../blocks/roadmap/roadmap
+
+//- team 
++style('team', 'blocks')
+include ../../blocks/team/team
+
+//- join 
++style('join', 'blocks')
+include ../../blocks/join/join
+
