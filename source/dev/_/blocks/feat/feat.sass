@@ -1,4 +1,111 @@
-// .feat
+.feat
+	padding: 106px 0
+	position: relative
+	&:before
+		z-index: -1
+		top: 180px
+		width: 100%
+		height: 1500px
+		background: radial-gradient(79% 79% at 50% 0%, #1F184C 0%, #110D27 100%)
+		position: absolute
+		content: ""
+	&__list
+		width: 100%
+		max-width: 1116px
+		margin: 112px auto 0
+	&__item
+		margin-bottom: 250px
+		display: flex
+		flex-wrap: wrap
+		position: relative
+		&:first-of-type
+			.feat
+				&__poly
+					&:before
+						left: 50%
+						bottom: 100%
+						width: 1px
+						height: 100px
+						margin-bottom: 7px
+						margin-left: -1px
+						transform: translateX(-50%)
+						background: linear-gradient(rgba(111, 108, 233, 0) 0%, #6F6CE9 100% )
+						position: absolute
+						content: ""
+		&:last-of-type
+			margin-bottom: 0
+		&.decor
+			&:before, &:after
+				z-index: -1
+				width: 260px
+				height: 150px
+				border-radius: 100%
+				filter: blur(200px)
+				-webkit-filter: blur(200px)
+				position: absolute
+				content: ""
+			&:before
+				top: 100px
+				left: -60px
+				background: var(--light-blue)
+			&:after
+				top: 30px
+				left: 280px
+				background: var(--blue)
+			&.--pink
+				&:before
+					background: var(--pink)
+	&__preview
+		width: 494px
+		min-height: 380px
+		background: linear-gradient(122.74deg, #A662FC 0%, #592DD6 100%)
+		border-radius: 8px
+		overflow: hidden
+		display: flex
+		align-items: center
+		justify-content: center
+		position: relative
+		&.--corner
+			align-items: flex-end
+			justify-content: flex-end
+	&__info
+		width: 100%
+		max-width: 414px
+		margin-top: 5px
+		margin-right: 95px
+		margin-left: auto
+	&__icon
+		width: 48px
+		height: 48px
+		margin-bottom: 20px
+	&__name
+		font-size: 21px
+		font-weight: 700
+		margin-bottom: 12px
+		text-transform: capitalize
+	&__text
+		line-height: 26px
+		letter-spacing: -0.1px
+		color: var(--main-light)
+	&__poly
+		left: 50%
+		width: 19px
+		height: 19px
+		margin-top: 8px
+		transform: translateX(-50%)
+		background: url('../../uploads/icons/poly.svg') no-repeat
+		background-size: contain
+		position: absolute
+		&:after
+			top: 26px
+			left: 50%
+			width: 1px
+			height: 598px
+			margin-left: -1px
+			transform: translateX(-50%)
+			background: url('../../uploads/decor-line.svg') no-repeat
+			position: absolute
+			content: ""
 
 @media screen and (max-width: 1220px)
 	// .feat

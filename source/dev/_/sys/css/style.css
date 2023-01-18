@@ -6,6 +6,7 @@
   --main-dark: #110D27;
   --main-light: #8E9FD7;
   --blue: #0026F0;
+  --light-blue: #00E2F0;
   --pink: #BE1DE6;
   --purple: #5445B4;
   --grad-purple: linear-gradient(274.92deg, #5458F7 0%, #CD54F7 100%), linear-gradient(96.57deg, #8F68FF 0%, #4A6FCF 100%);
@@ -302,6 +303,16 @@ path, circle, rect, line {
   -webkit-text-fill-color: transparent;
 }
 
+.title-grad-pink {
+  background: var(--title-grad-pink);
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .inner {
   overflow: hidden;
 }
@@ -402,6 +413,12 @@ path, circle, rect, line {
   height: 33px;
   background: var(--grad-purple);
   clip-path: path("M12.5 1.1547C13.7376 0.440169 15.2624 0.440169 16.5 1.1547L26.7894 7.0953C28.027 7.80983 28.7894 9.13034 28.7894 10.5594V22.4406C28.7894 23.8697 28.027 25.1902 26.7894 25.9047L16.5 31.8453C15.2624 32.5598 13.7376 32.5598 12.5 31.8453L2.21058 25.9047C0.972976 25.1902 0.210581 23.8697 0.210581 22.4406V10.5594C0.210581 9.13034 0.972977 7.80983 2.21058 7.0953L12.5 1.1547Z");
+}
+.b-head__name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 6px;
+  text-transform: capitalize;
 }
 .b-head__title {
   margin-bottom: 20px;

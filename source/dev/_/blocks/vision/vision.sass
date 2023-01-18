@@ -1,5 +1,15 @@
 .vision
 	padding: 96px 0 0
+	position: relative
+	&:after
+		z-index: -1
+		bottom: -200px
+		width: 100%
+		height: 1415px
+		transform: matrix(1, 0, 0, -1, 0, 0)
+		background: radial-gradient(79% 79% at 50% 0%, #1F184C 0%, #110D27 100%)
+		position: absolute
+		content: ""
 	&__main
 		width: 100%
 		max-width: 1116px
@@ -60,7 +70,7 @@
 		overflow: hidden
 
 .table
-	padding: 25px
+	padding: 25px 25px 20px
 	background: linear-gradient(180deg, #1B163A 0%, #181437 100%)
 	border-radius: var(--border-lg)
 	position: relative
