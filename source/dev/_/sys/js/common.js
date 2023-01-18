@@ -57,11 +57,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const id = smoothLink.getAttribute('href');
 
-      menuHam.classList.remove('--toggle');
-      menuNav.classList.remove('--toggle');
-      html.classList.remove('overflow-disable');
-      body.classList.remove('overflow-disable');
-      inner.classList.remove('overflow-disable');
+      // menuHam.classList.remove('--toggle');
+      // menuNav.classList.remove('--toggle');
+      // html.classList.remove('overflow-disable');
+      // body.classList.remove('overflow-disable');
+      // inner.classList.remove('overflow-disable');
 
       document.querySelector(id).scrollIntoView({
         behavior: 'smooth',

@@ -1,0 +1,26 @@
+.footer {
+  padding: 32px 0;
+  color: #364781;
+}
+.footer.b-line:after {
+  top: 0;
+  bottom: auto;
+}
+.footer__wrap {
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__socials-item {
+  width: 24px;
+  height: 24px;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__socials-item:last-child {
+  margin-right: 0;
+}
+.footer__socials-item:hover svg path {
+  fill: #465073;
+}

@@ -13,9 +13,9 @@ block content
 					.intro__title.h1.title-grad-light #[h1 Marketplace for virtual in-game goods and services]
 					.intro__text A cutting-edge marketplace not only for in-game goods, including virtual items, currencies, artifacts, but also for services like mentoring, team-up with professionals, etc.
 					.intro__btns.row
-						.intro__btn.btn.--grad(href="") Whitepaper
+						a.intro__btn.btn.--grad(href="") Whitepaper
 							.btn__border
-						.intro__btn.btn.--border(href="") Product
+						a.intro__btn.btn.--border(href="") Product
 							.btn__border
 				.intro__preview
 					.intro__video
@@ -41,7 +41,7 @@ block content
 					+games('_/uploads/game-10.svg')
 
 	+style('vision', 'blocks')
-	.vision
+	.vision.anchore
 		.case
 			.vision__head.b-head
 				.b-head__top.mb-lg
@@ -88,9 +88,10 @@ block content
 								.table__item
 								.table__item
 								.table__item
+		.anchore__link#intro
 
 	+style('feat', 'blocks')
-	.feat
+	.feat.anchore
 		.case
 			.feat__head.b-head
 				.b-head__top
@@ -176,9 +177,10 @@ block content
 							.feat__name continuous Interface Improvement
 							.feat__text Updating the user interface is high on our priority list. A quality UI/UX is important for both the overall user experience and presentation. We will never stop improving it.
 						.feat__poly
+		.anchore__link#feat
 
 	+style('token', 'blocks')
-	.token
+	.token.anchore
 		.case
 			.token__head.b-head
 				.b-head__top
@@ -206,9 +208,10 @@ block content
 						video(autoplay muted loop playsinline webkit-playsinline)
 							source(src="_/uploads/token-video.webm" type="video/webm")
 							source(src="_/uploads/token-video.mp4" type="video/mp4")
+		.anchore__link#token
 
 	+style('roadmap', 'blocks')
-	.roadmap
+	.roadmap.anchore
 		.case
 			.roadmap__head.b-head
 				.b-head__top
@@ -288,9 +291,10 @@ block content
 							<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.258013 0.838811C-0.0348802 1.1317 -0.0348802 1.60658 0.258013 1.89947L6.35926 8.00072L0.258013 14.102C-0.0348802 14.3949 -0.0348802 14.8697 0.258013 15.1626C0.550906 15.4555 1.02578 15.4555 1.31867 15.1626L7.95025 8.53105C8.24315 8.23816 8.24315 7.76328 7.95025 7.47039L1.31867 0.838811C1.02578 0.545917 0.550906 0.545917 0.258013 0.838811Z" fill="white"/></svg>
 		.roadmap__bg
 			img(src="_/uploads/roadmap-bg.jpg", alt="" width="1920" height="800")
+		.anchore__link#roadmap
 
 	+style('team', 'blocks')
-	.team
+	.team.anchore
 		.case
 			.team__head.b-head
 				.b-head__top
@@ -314,7 +318,8 @@ block content
 					+team('_/uploads/team-3.png', 'Alex Tyutyunnik', 'Chief Operations Officer')
 			.team__border
 		.team__bg
-			img(src="_/uploads/team-bg.png", alt="")
+			img(src="_/uploads/team-bg.png", alt="" width="1920" height="1384")
+		.anchore__link#team
 
 	+style('join', 'blocks')
 	.join
@@ -324,7 +329,7 @@ block content
 					img(src="_/uploads/join-logo.svg", alt="" width="149" height="148")
 				.join__title.h2 #[h2 Join us and let’s change the world with Loot4Pay]
 				.join__btn-wrap
-					.join__btn.btn.--grad Whitepaper
+					a.join__btn.btn.--grad(href="") Whitepaper
 						.btn__border
 				.join__stars
 					img(src="_/uploads/stars.svg", alt="")
