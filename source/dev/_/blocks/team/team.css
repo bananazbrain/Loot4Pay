@@ -1,0 +1,74 @@
+.team {
+  padding: 96px 0;
+  position: relative;
+}
+.team__main {
+  width: 100%;
+  max-width: 1116px;
+  margin: 80px auto 0;
+}
+.team__list {
+  gap: 64px 24px;
+  justify-content: center;
+}
+.team__item {
+  width: calc( 100% / 4 - 18px );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team__img {
+  width: 134px;
+  height: 134px;
+  margin-bottom: 14px;
+  border: 2px solid #2C214D;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.team__name {
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.team__duty {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--main-light);
+  text-transform: uppercase;
+}
+.team__border {
+  z-index: -1;
+  width: 2030px;
+  height: 748px;
+  bottom: -110px;
+  left: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background: var(--main-dark);
+  position: absolute;
+}
+.team__border:before {
+  inset: 0;
+  z-index: 1;
+  padding: 1.5px;
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+  transform: scale(-1, -1);
+  transition: var(--transition);
+  background: linear-gradient(#273D7C 0%, #130F2A 20%);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.team__bg {
+  z-index: -1;
+  top: -208px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1920px;
+  height: 1384px;
+  position: absolute;
+}

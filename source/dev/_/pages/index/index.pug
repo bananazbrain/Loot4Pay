@@ -289,3 +289,29 @@ block content
 		.roadmap__bg
 			img(src="_/uploads/roadmap-bg.jpg", alt="" width="1920" height="800")
 
+	+style('team', 'blocks')
+	.team
+		.case
+			.team__head.b-head
+				.b-head__top
+					.b-head__num #[span 5]
+					.b-head__name.title-grad-pink experience is everything
+				.b-head__title.h2.title-grad-light #[h2 Our Team]
+				.b-head__text.tac The Loot4Pay team consists of industry veterans. Our combined experience allows us to #[br]understand what modern gamers really want.
+			.team__main
+				.team__list.row
+					mixin team(img, name, duty)
+						.team__item
+							.team__img.cover
+								img(src=img, alt="")
+							.team__name=name
+							.team__duty=duty
+					+team('_/uploads/team-1.png', 'Grigoriy Atbashiyan', 'Chief Executive Officer')
+					+team('_/uploads/team-2.png', 'Viktor Falikov', 'Chief technical officer')
+					+team('_/uploads/team-3.png', 'Anton Olashyn', 'Chief Design Officer')
+					+team('_/uploads/team-1.png', 'Pavel Pivak', 'Chief Marketing Officer')
+					+team('_/uploads/team-2.png', 'Anton Plotnikov', 'Chief SERVICES Officer')
+					+team('_/uploads/team-3.png', 'Alex Tyutyunnik', 'Chief Operations Officer')
+			.team__border
+		.team__bg
+			img(src="_/uploads/team-bg.png", alt="")

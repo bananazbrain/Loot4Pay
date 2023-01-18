@@ -123,13 +123,14 @@
   justify-content: space-between;
 }
 .roadmap__bg {
-  z-index: -2;
+  z-index: -1;
   opacity: 0.16;
-  top: 100px;
+  top: 110px;
   left: 50%;
   width: 1920px;
   height: 800px;
   transform: translateX(-50%);
   pointer-events: none;
   position: absolute;
+  mix-blend-mode: lighten;
 }
