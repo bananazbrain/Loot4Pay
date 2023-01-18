@@ -1,4 +1,128 @@
-// .intro
+.intro
+	padding: 110px 0 42px
+	&__main
+		margin-bottom: 126px
+	&__info
+		width: calc( 100% - 670px )
+		padding-right: 75px
+		position: relative
+		&:before
+			z-index: -1
+			top: -100px
+			left: -380px
+			width: 638px
+			height: 267px
+			border-radius: 100%
+			background: #6C1FCD
+			filter: blur(380px)
+			-webkit-filter: blur(380px)
+			content: ""
+			position: absolute
+		&:after
+			z-index: -1
+			top: 100px
+			left: -250px
+			width: 693px
+			height: 693px
+			background: url('../../uploads/decor-1.png') no-repeat
+			background-size: contain
+			position: absolute
+			content: ""
+	&__title
+		margin-bottom: 12px
+	&__text
+		font-size: 20px
+		line-height: 32px
+		margin-bottom: 54px
+		color: var(--main-light)
+	&__btn
+		max-width: 191px
+		min-height: 48px
+		margin-right: 24px
+		&:last-child
+			margin-right: 0
+
+	&__preview
+		width: 100%
+		max-width: 670px
+		position: relative
+		&:before, &:after
+			z-index: -1
+			width: 250px
+			filter: blur(250px)
+			-webkit-filter: blur(250px)
+			border-radius: 100%
+			position: absolute
+			content: ""
+		&:before
+			bottom: 80px
+			left: 60px
+			height: 186px
+			background: #0026F0
+		&:after
+			bottom: 150px
+			right: 80px
+			height: 220px
+			background: #BE1DE6
+	&__video
+		border-radius: var(--border)
+		overflow: hidden
+	&__play
+		top: 50%
+		left: 50%
+		width: 98px
+		height: 98px
+		border: 1px solid var(--white)
+		transition: var(--transition)
+		border-radius: 50%
+		transform: translate(-50%, -50%)
+		background: linear-gradient(180deg, rgba(52, 38, 107, 0.37) 0%, rgba(21, 16, 47, 0.37) 100%)
+		backdrop-filter: blur(6px)
+		-webkit-backdrop-filter: blur(6px)
+		display: flex
+		align-items: center
+		justify-content: center
+		position: absolute
+		cursor: pointer
+		img
+			left: 4px
+			position: relative
+		&:hover
+			border-color: var(--purple)
+
+.games
+	&__title
+		margin-bottom: 18px
+		letter-spacing: 3.1px
+		text-shadow: 0px 0px 4px rgba(159, 143, 255, 0.2)
+		text-transform: uppercase
+		position: relative
+		&:before, &:after
+			top: 50%
+			width: 52px
+			height: 1px
+			transform: translateY(-50%)
+			background: linear-gradient(270deg, #7365CE 0%, rgba(84, 69, 181, 0) 100%)
+			position: absolute
+			content: ""
+		&:before
+			left: -64px
+		&:after
+			right: -64px
+			transform: translateY(-50%) scale(-1, 1)
+	&__subtitle
+		font-size: 12px
+		font-weight: 600
+		letter-spacing: 3.1px
+		margin-bottom: 16px
+		color: var(--purple)
+		text-transform: uppercase
+	&__list
+		gap: 21px
+		justify-content: center
+	&__item
+		border-radius: var(--border-sm)
+		overflow: hidden
 
 @media screen and (max-width: 1220px)
 	// .intro

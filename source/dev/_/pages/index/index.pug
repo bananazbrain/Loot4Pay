@@ -4,11 +4,13 @@ block vars
 		title = "Loot4Pay"
 
 block content
+
+	+style('intro', 'blocks')
 	.intro
 		.case
 			.intro__main.row
 				.intro__info
-					.intro__title.h1 #[h1 Marketplace for virtual in-game goods and services]
+					.intro__title.h1.title-grad #[h1 Marketplace for virtual in-game goods and services]
 					.intro__text A cutting-edge marketplace not only for in-game goods, including virtual items, currencies, artifacts, but also for services like mentoring, team-up with professionals, etc.
 					.intro__btns.row
 						.intro__btn.btn.--grad(href="") Whitepaper
@@ -17,11 +19,11 @@ block content
 							.btn__border
 				.intro__preview
 					.intro__video
-						img(src="_/uploads/video-img.jpg", alt="" width="622" height="352")
+						img(src="_/uploads/video-img.png" srcset="_/uploads/video-img-x2.png 2x", alt="" width="670" height="400")
 					.intro__play
 						img(src="_/uploads/icons/play.svg", alt="")
-			.intro__games.games
-				.games__title.h3 #[h3 Building social metaverse network for gamers]
+			.intro__games.games.tac
+				.games__title.h3.title-grad-purple #[h3 Building social metaverse network for gamers]
 				.games__subtitle Works with 200+ games
 				.games__list.row
 					mixin games(img)

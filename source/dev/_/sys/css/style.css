@@ -250,6 +250,7 @@ path, circle, rect, line {
   font-size: 58px;
   font-weight: 800;
   line-height: 72px;
+  text-transform: capitalize;
 }
 
 .h2 {
@@ -260,7 +261,7 @@ path, circle, rect, line {
 
 .h3 {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 34px;
 }
 
@@ -274,6 +275,26 @@ path, circle, rect, line {
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
+}
+
+.title-grad {
+  background: var(--title-grad-light);
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-grad-purple {
+  background: var(--title-grad-purple);
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .inner {
