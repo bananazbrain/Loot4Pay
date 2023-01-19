@@ -9,7 +9,7 @@ block content
 	.intro
 		.case
 			.intro__main.row
-				.intro__info
+				.intro__info.an.fadeIn-up
 					.intro__title.h1.title-grad-light #[h1 Marketplace for virtual in-game goods and services]
 					.intro__text A cutting-edge marketplace not only for in-game goods, including virtual items, currencies, artifacts, but also for services like mentoring, team-up with professionals, etc.
 					.intro__btns.row
@@ -17,15 +17,15 @@ block content
 							.btn__border
 						a.intro__btn.btn.--border(href="") Product
 							.btn__border
-				.intro__preview
+				.intro__preview.an.fadeIn-scaleFrom
 					.intro__video
 						img(src="_/uploads/video-img.png" srcset="_/uploads/video-img-x2.png 2x", alt="" width="670" height="400")
 					.intro__play
 						img(src="_/uploads/icons/play.svg", alt="")
 			.intro__games.games.tac
-				.games__title.h3.title-grad-purple #[h3 Building social metaverse network for gamers]
-				.games__subtitle Works with 200+ games
-				.games__list.row
+				.games__title.h3.title-grad-purple.an.fadeIn-up #[h3 Building social metaverse network for gamers]
+				.games__subtitle.an.fadeIn-up(data-timeout="0.1s") Works with 200+ games
+				.games__list.row.an.fadeIn-up(data-timeout="0.15s")
 					mixin games(img)
 						.games__item
 							img(src=img, alt="" width="40" height="40")
@@ -45,10 +45,10 @@ block content
 		.case
 			.vision__head.b-head
 				.b-head__top.mb-lg
-					.b-head__num #[span 1]
-				.b-head__title.h2.tac.title-grad-light #[h2 Our Vision of #[i «Play-to-earn»]]
-				.b-head__text.tac Our marketplace gives players the opportunity to earn money on AAA games that are already firmly established on the  market. These games already have hundreds of millions of players enjoying the gameplay, making in-game goods and services tied to those games valuable. Making money on your favorite game with an already huge client base is much more efficient and enjoyable than making money on so-called play-to-earn casual games that are designed to extort money from users and are completely uninteresting.
-			.vision__main
+					.b-head__num.an.fadeIn-down #[span 1]
+				.b-head__title.h2.tac.title-grad-light.an.fadeIn-up #[h2 Our Vision of #[i «Play-to-earn»]]
+				.b-head__text.tac.an.fadeIn-up(data-timeout="0.1s") Our marketplace gives players the opportunity to earn money on AAA games that are already firmly established on the  market. These games already have hundreds of millions of players enjoying the gameplay, making in-game goods and services tied to those games valuable. Making money on your favorite game with an already huge client base is much more efficient and enjoyable than making money on so-called play-to-earn casual games that are designed to extort money from users and are completely uninteresting.
+			.vision__main.an.fadeIn-up
 				.vision__example.ex.bg
 					.ex__top EXAMPLE
 					.ex__wrap.row
@@ -95,13 +95,13 @@ block content
 		.case
 			.feat__head.b-head
 				.b-head__top
-					.b-head__num #[span 2]
-					.b-head__name.title-grad-pink constant evolution
-				.b-head__title.h2.title-grad-light #[h2 Upcoming improvements]
-				.b-head__text.tac We aim to keep constantly improving our service and adding new features. Our goal is creating a metaverse for gamers, which will encompass all gaming worlds. We will make Loot4Pay the go-to place  among all gamers for anything you might need in ANY game.
+					.b-head__num.an.fadeIn-down #[span 2]
+					.b-head__name.title-grad-pink.an.fadeIn-up constant evolution
+				.b-head__title.h2.title-grad-light.an.fadeIn-up #[h2 Upcoming improvements]
+				.b-head__text.tac.an.fadeIn-up(data-timeout="0.1s") We aim to keep constantly improving our service and adding new features. Our goal is creating a metaverse for gamers, which will encompass all gaming worlds. We will make Loot4Pay the go-to place  among all gamers for anything you might need in ANY game.
 			.feat__main
 				.feat__list
-					.feat__item
+					.feat__item.an.fadeIn
 						.feat__preview.--corner
 							.feat__img
 								img(src="_/uploads/feat-1.png" srcset="_/uploads/feat-1-x2.png 2x", alt="")
@@ -112,7 +112,7 @@ block content
 							.feat__text Implementation of special functionality that will allow people to trade in-game skins in Dota 2 and CS:GO games automatically. It will save seller’s and buyer’s time and make their user experience super enjoyable.
 						.feat__poly
 							
-					.feat__item.decor
+					.feat__item.an.fadeIn.decor
 						.feat__preview
 							.feat__img
 								img(src="_/uploads/feat-2.png" srcset="_/uploads/feat-2-x2.png 2x", alt="")
@@ -123,7 +123,7 @@ block content
 							.feat__text We will introduce the possibility for the sellers to advertise and customize their offers for a fee. This will help new merchants to gain a foothold on the #[br]platform.
 						.feat__poly
 
-					.feat__item.decor.--pink
+					.feat__item.an.fadeIn.decor.--pink
 						.feat__preview
 							.feat__img
 								img(src="_/uploads/feat-3.png" srcset="_/uploads/feat-3-x2.png 2x", alt="")
@@ -134,7 +134,7 @@ block content
 							.feat__text Tickets, required to participate in the lottery, can be purchased only with L4P token. The more tickets one has, the higher the chance of the victory.
 						.feat__poly
 
-					.feat__item.decor.--pink
+					.feat__item.an.fadeIn.decor.--pink
 						.feat__preview
 							.feat__img
 								img(src="_/uploads/feat-4.png" srcset="_/uploads/feat-4-x2.png 2x", alt="")
@@ -145,7 +145,7 @@ block content
 							.feat__text We will implement a live search function. Placing orders to find teammate, professional or mentor will be just as easy as calling a taxi using a phone app.
 						.feat__poly
 
-					.feat__item.decor
+					.feat__item.an.fadeIn.decor
 						.feat__preview
 							.feat__img
 								img(src="_/uploads/feat-5.png" srcset="_/uploads/feat-5-x2.png 2x", alt="")
@@ -156,7 +156,7 @@ block content
 							.feat__text Loot4Pay will become a complete social network for gamers. They will be able to use it to locate other people with similar interests and find new friends to play with or discuss any game related topic.
 						.feat__poly
 
-					.feat__item.decor.--pink
+					.feat__item.an.fadeIn.decor.--pink
 						.feat__preview.--corner
 							.feat__img
 								img(src="_/uploads/feat-6.png" srcset="_/uploads/feat-6-x2.png 2x", alt="")
@@ -167,7 +167,7 @@ block content
 							.feat__text Adding a streaming service similar to Twitch.tv. Live streaming is an integral part of gaming culture and we we are going to use it to our advantage.
 						.feat__poly
 
-					.feat__item.decor
+					.feat__item.an.fadeIn.decor
 						.feat__preview.--bottom
 							.feat__img
 								img(src="_/uploads/feat-7.png" srcset="_/uploads/feat-7-x2.png 2x", alt="")
@@ -184,13 +184,13 @@ block content
 		.case
 			.token__head.b-head
 				.b-head__top
-					.b-head__num.clean-line #[span 3]
-					.b-head__name.title-grad-pink exploring new territory
-				.b-head__title.h2.title-grad-light #[h2 Token Usability]
-				.b-head__text.tac At this point we’re looking to evolve our marketplace #[br]by introducing blockchain integration
+					.b-head__num.clean-line.an.fadeIn-down #[span 3]
+					.b-head__name.title-grad-pink.an.fadeIn-up exploring new territory
+				.b-head__title.h2.title-grad-light.an.fadeIn-up #[h2 Token Usability]
+				.b-head__text.tac.an.fadeIn-up(data-timeout="0.1s") At this point we’re looking to evolve our marketplace #[br]by introducing blockchain integration
 			.token__main
 				.token__wrap.row
-					.token__info
+					.token__info.an.fadeIn-up
 						.token__list
 							.token__item
 								.token__icon
@@ -205,7 +205,7 @@ block content
 						.token__note
 							.token__note-text #[u IMPORTANT!] Find out more in our #[span.title-grad-pink Whitepaper]
 					.token__video
-						video(autoplay muted loop playsinline webkit-playsinline)
+						video(autoplay muted loop playsinline webkit-playsinline).an.fadeIn-scaleFrom
 							source(src="_/uploads/token-video.webm" type="video/webm")
 							source(src="_/uploads/token-video.mp4" type="video/mp4")
 		.anchore__link#token
@@ -215,11 +215,11 @@ block content
 		.case
 			.roadmap__head.b-head
 				.b-head__top
-					.b-head__num #[span 4]
-					.b-head__name.title-grad-pink Whats next
-				.b-head__title.h2.title-grad-light #[h2 Roadmap]
-				.b-head__text.tac We understand that constant updates are key to success. Here you can see roadmap that will #[br]allow us to meet all our current goals.
-			.roadmap__main
+					.b-head__num.an.fadeIn-down #[span 4]
+					.b-head__name.title-grad-pink.an.fadeIn-up Whats next
+				.b-head__title.h2.title-grad-light.an.fadeIn-up #[h2 Roadmap]
+				.b-head__text.tac.an.fadeIn-up(data-timeout="0.1s") We understand that constant updates are key to success. Here you can see roadmap that will #[br]allow us to meet all our current goals.
+			.roadmap__main.an.fadeIn-up
 				.roadmap__slider.swiper
 					.roadmap__slider-wrap.swiper-wrapper
 						.roadmap__slider-slide.swiper-slide
@@ -298,11 +298,11 @@ block content
 		.case
 			.team__head.b-head
 				.b-head__top
-					.b-head__num #[span 5]
-					.b-head__name.title-grad-pink experience is everything
-				.b-head__title.h2.title-grad-light #[h2 Our Team]
-				.b-head__text.tac The Loot4Pay team consists of industry veterans. Our combined experience allows us to #[br]understand what modern gamers really want.
-			.team__main
+					.b-head__num.an.fadeIn-down #[span 5]
+					.b-head__name.title-grad-pink.an.fadeIn-up experience is everything
+				.b-head__title.h2.title-grad-light.an.fadeIn-up #[h2 Our Team]
+				.b-head__text.tac.an.fadeIn-up(data-timeout="0.1s") The Loot4Pay team consists of industry veterans. Our combined experience allows us to #[br]understand what modern gamers really want.
+			.team__main.an.fadeIn-up
 				.team__list.row
 					mixin team(img, name, duty)
 						.team__item
@@ -325,13 +325,13 @@ block content
 	.join
 		.case
 			.join__wrap.tac
-				.join__img
+				.join__img.an.fadeIn-scaleFrom
 					img(src="_/uploads/join-logo.svg", alt="")
-				.join__title.h2 #[h2 Join us and let’s change the world with Loot4Pay]
-				.join__btn-wrap
+				.join__title.h2.an.fadeIn-up #[h2 Join us and let’s change the world with Loot4Pay]
+				.join__btn-wrap.an.fadeIn-up(data-timeout="0.1s")
 					a.join__btn.btn.--grad(href="") Whitepaper
 						.btn__border
 				.join__stars
-					img(src="_/uploads/stars.svg", alt="")
+					img(src="_/uploads/stars.svg", alt="").an.fadeIn
 				.join__decor
-					img(src="_/uploads/join-bg.png", alt="")
+					img(src="_/uploads/join-bg.png", alt="").an.fadeIn-scaleFrom
