@@ -10,6 +10,11 @@
   padding-left: 0;
   padding-right: 0;
 }
+@media screen and (max-width: 1460px) {
+  .case {
+    width: 1220px;
+  }
+}
 @media screen and (max-width: 1280px) {
   .case {
     width: 960px;
@@ -28,6 +33,8 @@
 @media screen and (max-width: 580px) {
   .case {
     width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 

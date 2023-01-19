@@ -24,3 +24,24 @@
 .footer__socials-item:hover svg path {
   fill: #465073;
 }
+
+@media screen and (max-width: 991px) {
+  .footer__wrap {
+    flex-direction: column;
+  }
+  .footer__logo {
+    order: 1;
+    margin-bottom: 40px;
+  }
+  .footer__socials {
+    order: 2;
+    margin-bottom: 40px;
+  }
+  .footer__socials-item {
+    margin-right: 18px;
+  }
+  .footer__copy {
+    order: 3;
+    font-size: 15px;
+  }
+}

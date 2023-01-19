@@ -72,4 +72,43 @@
   width: 1920px;
   height: 1384px;
   position: absolute;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 991px) {
+  .team__item {
+    width: calc( 100% / 3 - 18px );
+  }
+  .team__name {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .team {
+    padding: 80px 0 100px;
+  }
+  .team__main {
+    margin: 50px auto 0;
+  }
+  .team__item {
+    width: calc( 100% / 2 - 18px );
+  }
+  .team__bg {
+    top: -160px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .team__list {
+    gap: 30px;
+  }
+  .team__item {
+    width: 100%;
+  }
+  .team__duty {
+    font-size: 12px;
+  }
+  .team__bg {
+    top: 0;
+  }
 }

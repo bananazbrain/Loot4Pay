@@ -23,11 +23,18 @@
 					path
 						fill: #465073
 
-@media screen and (max-width: 1220px)
-	// .footer
-
-@media screen and (max-width: 992px)
-	// .footer
-
-@media screen and (max-width: 767px)
-	// .footer
+@media screen and (max-width: 991px)
+	.footer
+		&__wrap
+			flex-direction: column
+		&__logo
+			order: 1
+			margin-bottom: 40px
+		&__socials
+			order: 2
+			margin-bottom: 40px
+			&-item
+				margin-right: 18px
+		&__copy
+			order: 3
+			font-size: 15px

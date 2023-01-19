@@ -217,6 +217,9 @@
   line-height: 22px;
   min-height: 109px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .table__item p {
   background: var(--title-grad-light);
@@ -226,4 +229,192 @@
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1280px) {
+  .vision {
+    padding: 96px 0 56px;
+  }
+  .vision__main {
+    margin: 60px auto 0;
+  }
+
+  .ex {
+    padding: 50px 30px;
+    margin-bottom: 42px;
+  }
+
+  .table__wrap {
+    grid-template-columns: 270px 290px 290px;
+  }
+  .table__col.--feat .table__item {
+    padding: 28px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ex {
+    padding: 40px 20px;
+    min-height: 175px;
+    margin-bottom: 30px;
+  }
+  .ex__top {
+    font-size: 14px;
+  }
+  .ex__logo {
+    max-width: 190px;
+  }
+  .ex__price {
+    font-size: 40px;
+  }
+  .ex__text {
+    font-size: 15px;
+  }
+  .ex__bg {
+    border-radius: var(--border);
+  }
+
+  .table {
+    padding: 16px;
+    border-radius: var(--border);
+  }
+  .table:before {
+    border-radius: var(--border);
+  }
+  .table__wrap {
+    gap: 16px;
+    grid-template-columns: 220px 212px 212px;
+  }
+  .table__col.--feat .table__item {
+    padding: 16px;
+  }
+  .table__col.--true .table__list {
+    margin-top: 0;
+  }
+  .table__col.--true .table__list:before {
+    padding: 3px;
+  }
+  .table__col.--true .table__item:before {
+    width: 28px;
+    height: 20px;
+  }
+  .table__col.--false .table__item:before {
+    width: 22px;
+    height: 22px;
+  }
+  .table__title {
+    font-size: 16px;
+  }
+  .table__title strong {
+    font-size: 16px;
+  }
+  .table__item {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .vision {
+    padding: 70px 0;
+  }
+  .vision__main {
+    margin: 50px auto 0;
+  }
+
+  .ex {
+    padding: 30px 16px;
+  }
+  .ex__top {
+    top: -12px;
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  .ex__wrap {
+    flex-direction: column;
+  }
+  .ex__logo {
+    margin-bottom: 20px;
+  }
+  .ex__info {
+    text-align: center;
+  }
+  .ex__price {
+    font-size: 36px;
+  }
+  .ex__text {
+    font-size: 14px;
+  }
+
+  .table__wrap {
+    grid-template-columns: 220px 128px 128px;
+  }
+  .table__title {
+    font-size: 14px;
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .table__title strong {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .ex {
+    padding: 25px 10px;
+  }
+  .ex__logo {
+    max-width: 160px;
+  }
+  .ex__price {
+    font-size: 32px;
+  }
+  .ex__text {
+    font-size: 13px;
+  }
+
+  .table {
+    padding: 10px;
+  }
+  .table__wrap {
+    gap: 10px;
+    grid-template-columns: 135px 1fr 1fr;
+  }
+  .table__col.--feat .table__item {
+    padding: 10px;
+    min-height: 94.5px;
+  }
+  .table__col.--true .table__list:before {
+    padding: 1px;
+  }
+  .table__col.--true .table__item:before {
+    width: 22px;
+    height: 16px;
+  }
+  .table__col.--false .table__item:before {
+    width: 18px;
+    height: 18px;
+  }
+  .table__item {
+    font-size: 14px;
+    min-height: 100px;
+  }
+  .table__title {
+    font-size: 12px;
+  }
+  .table__title strong {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 389px) {
+  .table {
+    overflow-x: scroll;
+    border-radius: 0;
+    background: transparent;
+  }
+  .table:before {
+    display: none;
+  }
+  .table__wrap {
+    width: 380px;
+    grid-template-columns: 175px 1fr 1fr;
+  }
 }

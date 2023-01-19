@@ -2,6 +2,7 @@
 	padding: 110px 0 42px
 	&__main
 		margin-bottom: 126px
+		align-items: flex-start
 	&__info
 		width: calc( 100% - 670px )
 		padding-right: 75px
@@ -124,11 +125,118 @@
 		border-radius: var(--border-sm)
 		overflow: hidden
 
-@media screen and (max-width: 1220px)
-	// .intro
+@media screen and (max-width: 1460px)
+	.intro
+		&__main
+			align-items: center
+		&__info
+			width: calc( 100% - 560px )
+			padding-right: 50px
+		&__preview
+			max-width: 560px
+			margin-left: auto
+		&__video
+			img
+				width: 100%
+				height: 100%
 
-@media screen and (max-width: 992px)
-	// .intro
+@media screen and (max-width: 1280px)
+	.intro
+		padding: 70px 0
+		&__main
+			margin-bottom: 100px
+		&__info
+			width: 100%
+			max-width: 700px
+			padding-right: 0
+			margin: 0 auto 50px
+			text-align: center
+			&:before
+				left: -290px
+				filter: blur(300px)
+				-webkit-filter: blur(300px)
+			&:after
+				left: -200px
+		&__text
+			margin-bottom: 45px
+		&__btns
+			justify-content: center
+		&__preview
+			max-width: 670px
+			margin-right: auto
+
+@media screen and (max-width: 991px)
+	.intro
+		padding: 50px 0 70px
+		&__main
+			margin-bottom: 80px
+		&__info
+			max-width: 600px
+		&__text
+			font-size: 18px
+			line-height: 28px
 
 @media screen and (max-width: 767px)
-	// .intro
+	.intro
+		padding: 40px 0 70px
+		&__info
+			max-width: 500px
+		&__text
+			font-size: 16px
+			line-height: 26px
+		&__preview
+			max-width: 500px
+		&__play
+			width: 84px
+			height: 84px
+			img
+				width: 25px
+
+	.games
+		&__title
+			max-width: 370px
+		&__subtitle
+			font-size: 11px
+		&__list
+			max-width: 450px
+			margin-left: auto
+			margin-right: auto
+
+@media screen and (max-width: 580px)
+	.intro
+		padding: 30px 0 70px
+		&__info
+			&:before
+				top: -60px
+				left: -170px
+				width: 400px
+				height: 200px
+			&:after
+				display: none
+		&__text
+			margin-bottom: 35px
+		&__btn
+			max-width: 172px
+			margin-right: 16px
+		&__play
+			width: 80px
+			height: 80px
+			img
+				width: 22px
+
+	.games
+		&__title
+			max-width: 260px
+		&__subtitle
+			margin-bottom: 20px
+
+@media screen and (max-width: 389px)
+	.intro
+		&__btns
+			flex-direction: column
+		&__btn
+			max-width: 100%
+			margin-right: 0
+			margin-bottom: 16px
+			&:last-child
+				margin-bottom: 0

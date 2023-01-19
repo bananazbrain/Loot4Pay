@@ -39,3 +39,48 @@
   -webkit-filter: blur(50px);
   position: absolute;
 }
+
+@media screen and (max-width: 991px) {
+  .join {
+    padding: 120px 0 130px;
+  }
+  .join__img {
+    width: 135px;
+    height: 135px;
+    margin-bottom: 30px;
+  }
+  .join__title {
+    max-width: 620px;
+    line-height: 64px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .join {
+    padding: 110px 0;
+  }
+  .join__img {
+    width: 110px;
+    height: 110px;
+  }
+  .join__title {
+    max-width: 430px;
+    line-height: 50px;
+  }
+  .join__stars {
+    top: -110px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .join__img {
+    width: 100px;
+    height: 100px;
+  }
+  .join__title {
+    line-height: 42px;
+    margin-bottom: 35px;
+  }
+  .join__stars {
+    top: -100px;
+    margin-left: 20px;
+  }
+}

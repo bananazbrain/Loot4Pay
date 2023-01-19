@@ -140,6 +140,11 @@ path, circle, rect, line {
   padding-left: 0;
   padding-right: 0;
 }
+@media screen and (max-width: 1460px) {
+  .case {
+    width: 1220px;
+  }
+}
 @media screen and (max-width: 1280px) {
   .case {
     width: 960px;
@@ -158,6 +163,8 @@ path, circle, rect, line {
 @media screen and (max-width: 580px) {
   .case {
     width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -526,4 +533,142 @@ path, circle, rect, line {
   opacity: 1;
   transition: 1.5s;
   transition-property: opacity;
+}
+
+@media screen and (max-width: 1280px) {
+  .h1 {
+    font-size: 54px;
+    line-height: 68px;
+  }
+
+  .h2 {
+    font-size: 54px;
+    line-height: 64px;
+  }
+
+  .h3 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .b-line:after {
+    width: 950px;
+  }
+
+  .b-head__top.mb-lg {
+    margin-bottom: 28px;
+  }
+  .b-head__text {
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 850px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .h1 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .h2 {
+    font-size: 44px;
+    line-height: 54px;
+  }
+
+  .h3 {
+    font-size: 19px;
+    line-height: 29px;
+  }
+
+  .b-line:after {
+    width: 720px;
+  }
+
+  .b-head__name {
+    font-size: 20px;
+  }
+  .b-head__text {
+    max-width: 640px;
+  }
+  .b-head__text br {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h1 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+
+  .h2 {
+    font-size: 34px;
+    line-height: 44px;
+  }
+
+  .h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .b-line:after {
+    width: 530px;
+  }
+
+  .b-head__num:before {
+    height: 80px;
+  }
+  .b-head__name {
+    font-size: 16px;
+  }
+  .b-head__title {
+    margin-bottom: 14px;
+  }
+  .b-head__text {
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .h3 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .logo {
+    max-width: 145px;
+  }
+
+  .b-line:after {
+    width: 400px;
+  }
+
+  .b-head__top.mb-lg {
+    margin-bottom: 16px;
+  }
+  .b-head__name {
+    font-size: 15px;
+  }
+  .b-head__title i {
+    display: block;
+  }
+  .b-head__text {
+    font-size: 15px;
+    line-height: 26px;
+  }
 }

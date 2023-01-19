@@ -1,4 +1,5 @@
 .header
+	z-index: 10
 	padding: 22px 0
 	background: rgba(19, 15, 42, 0.2)
 	backdrop-filter: blur(10px)
@@ -67,11 +68,86 @@
 			&:nth-of-type(3)
 				transform: rotate(-45deg) translateY(-5px) translateX(5px)
 
-@media screen and (max-width: 1220px)
-	// .header
+@media screen and (max-width: 1460px)
+	.header
+		&__main
+			padding-left: 200px
 
-@media screen and (max-width: 992px)
-	// .header
+@media screen and (max-width: 1280px)
+	.header
+		&__main
+			padding-left: 100px
+		&__nav
+			ul
+				li
+					margin-right: 30px
+		&__btns
+			max-width: 205px
+		&__btn
+			&.--grad
+				margin-right: 15px
 
-@media screen and (max-width: 767px)
-	// .header
+@media screen and (max-width: 991px)
+	.header
+		padding: 18px 0
+		&__main
+			top: 75px
+			right: 0
+			left: 0
+			opacity: 0
+			padding-left: 0
+			width: 100%
+			height: calc( 100vh - 75px )
+			transform: translateY(50px)
+			position: fixed
+			flex-direction: column
+			justify-content: center
+			visibility: hidden
+			transition: var(--transition)
+			background: var(--main-dark)
+			overflow-y: auto
+			scrollbar-width: none
+			&::-webkit-scrollbar
+				width: 0
+		&__nav
+			width: 100%
+			margin-top: -50px
+			margin-bottom: 50px
+			ul
+				align-items: center
+				flex-direction: column
+				li
+					margin-right: 0
+					margin-bottom: 30px
+					&:last-child
+						margin-bottom: 0
+		&__btns
+			width: auto
+			max-width: none
+			margin-right: auto
+			flex-direction: column
+		&__btn
+			min-width: 191px
+			min-height: 48px
+			&.--grad
+				max-width: 191px
+				margin-right: 0
+				margin-bottom: 20px
+			&.--border
+				max-width: 191px
+		&.--toggle
+			.header
+				&__main
+					opacity: 1
+					transform: none
+					visibility: visible
+
+	.ham
+		display: flex
+
+@media screen and (max-width: 580px)
+	.header
+		padding: 12px 0
+		&__main
+			top: 63px
+			height: calc( 100vh - 63px )

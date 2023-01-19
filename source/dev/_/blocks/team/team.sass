@@ -63,12 +63,33 @@
 		width: 1920px
 		height: 1384px
 		position: absolute
+		pointer-events: none
 
-@media screen and (max-width: 1220px)
-	// .team
-
-@media screen and (max-width: 992px)
-	// .team
+@media screen and (max-width: 991px)
+	.team
+		&__item
+			width: calc( 100% / 3 - 18px )
+		&__name
+			font-size: 20px
+			margin-bottom: 10px
 
 @media screen and (max-width: 767px)
-	// .team
+	.team
+		padding: 80px 0 100px
+		&__main
+			margin: 50px auto 0
+		&__item
+			width: calc( 100% / 2 - 18px )
+		&__bg
+			top: -160px
+
+@media screen and (max-width: 580px)
+	.team
+		&__list
+			gap: 30px
+		&__item
+			width: 100%
+		&__duty
+			font-size: 12px
+		&__bg
+			top: 0

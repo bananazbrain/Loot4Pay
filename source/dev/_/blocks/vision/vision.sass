@@ -196,6 +196,9 @@
 		line-height: 22px
 		min-height: 109px
 		position: relative
+		display: flex
+		align-items: center
+		justify-content: center
 		p
 			background: var(--title-grad-light)
 			background-clip: text
@@ -205,11 +208,163 @@
 			-webkit-background-clip: text
 			-webkit-text-fill-color: transparent
 
-@media screen and (max-width: 1220px)
-	// .vision
+@media screen and (max-width: 1280px)
+	.vision
+		padding: 96px 0 56px
+		&__main
+			margin: 60px auto 0
 
-@media screen and (max-width: 992px)
-	// .vision
+	.ex
+		padding: 50px 30px
+		margin-bottom: 42px
+
+	.table
+		&__wrap
+			grid-template-columns: 270px 290px 290px
+		&__col
+			&.--feat
+				.table
+					&__item
+						padding: 28px
+
+@media screen and (max-width: 991px)
+	.ex
+		padding: 40px 20px
+		min-height: 175px
+		margin-bottom: 30px
+		&__top
+			font-size: 14px
+		&__logo
+			max-width: 190px
+		&__price
+			font-size: 40px
+		&__text
+			font-size: 15px
+		&__bg
+			border-radius: var(--border)
+
+	.table
+		padding: 16px
+		border-radius: var(--border)
+		&:before
+			border-radius: var(--border)
+		&__wrap
+			gap: 16px
+			grid-template-columns: 220px 212px 212px
+		&__col
+			&.--feat
+				.table
+					&__item
+						padding: 16px
+			&.--true
+				.table
+					&__list
+						margin-top: 0
+						&:before
+							padding: 3px
+					&__item
+						&:before
+							width: 28px
+							height: 20px
+			&.--false
+				.table
+					&__item
+						&:before
+							width: 22px
+							height: 22px
+		&__title
+			font-size: 16px
+			strong
+				font-size: 16px
+		&__item
+			font-size: 16px
 
 @media screen and (max-width: 767px)
-	// .vision
+	.vision
+		padding: 70px 0
+		&__main
+			margin: 50px auto 0
+
+	.ex
+		padding: 30px 16px
+		&__top
+			top: -12px
+			font-size: 12px
+			padding: 4px 8px
+		&__wrap
+			flex-direction: column
+		&__logo
+			margin-bottom: 20px
+		&__info
+			text-align: center
+		&__price
+			font-size: 36px
+		&__text
+			font-size: 14px
+
+	.table
+		&__wrap
+			grid-template-columns: 220px 128px 128px
+		&__title
+			font-size: 14px
+			min-height: 34px
+			display: flex
+			align-items: center
+			justify-content: center
+			strong
+				font-size: 14px
+
+@media screen and (max-width: 580px)
+	.ex
+		padding: 25px 10px
+		&__logo
+			max-width: 160px
+		&__price
+			font-size: 32px
+		&__text
+			font-size: 13px
+
+	.table
+		padding: 10px
+		&__wrap
+			gap: 10px
+			grid-template-columns: 135px 1fr 1fr
+		&__col
+			&.--feat
+				.table
+					&__item
+						padding: 10px
+						min-height: 94.5px
+			&.--true
+				.table
+					&__list
+						&:before
+							padding: 1px
+					&__item
+						&:before
+							width: 22px
+							height: 16px
+			&.--false
+				.table
+					&__item
+						&:before
+							width: 18px
+							height: 18px
+		&__item
+			font-size: 14px
+			min-height: 100px
+		&__title
+			font-size: 12px
+			strong
+				font-size: 12px
+
+@media screen and (max-width: 389px)
+	.table
+		overflow-x: scroll
+		border-radius: 0
+		background: transparent
+		&:before
+			display: none
+		&__wrap
+			width: 380px
+			grid-template-columns: 175px 1fr 1fr

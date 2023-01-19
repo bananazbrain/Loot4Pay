@@ -16,7 +16,6 @@
 		margin-left: auto
 		margin-right: auto
 		&-slide
-			z-index: 5
 			min-height: 326px
 			max-width: 281px
 			transition: .5s
@@ -44,6 +43,16 @@
 				&:before
 					opacity: 1
 				.roadmap
+					&__info
+						&:before
+							top: 27px
+							left: 0
+							width: 100%
+							height: 4px
+							background: linear-gradient(90deg, rgba(104, 112, 255, 0.5) 10%, #6870FF 50%, rgba(104, 112, 255, 0.5) 90%)
+							transition: .5s
+							position: absolute
+							content: ""
 					&__icon
 						width: 24px
 						height: 26px
@@ -59,6 +68,7 @@
 		padding: 56px 38px 0
 		position: relative
 	&__icon
+		z-index: 1
 		top: 18px
 		width: 20px
 		height: 20px
@@ -116,12 +126,32 @@
 		pointer-events: none
 		position: absolute
 		mix-blend-mode: lighten
+		pointer-events: none
 
-@media screen and (max-width: 1220px)
-	// .roadmap
+@media screen and (max-width: 1280px)
+	.roadmap
+		&__slider
+			overflow: visible
 
-@media screen and (max-width: 992px)
-	// .roadmap
+@media screen and (max-width: 991px)
+	.roadmap
+		&__main
+			margin: 60px auto 0
+		&__arrows
+			margin: 80px auto 0
 
 @media screen and (max-width: 767px)
-	// .roadmap
+	.roadmap
+		padding: 70px 0
+		&__bg
+			top: 50px
+
+// @media screen and (max-width: 580px)
+// 	.roadmap
+// 		&__slider
+// 			&-slide
+// 				&.swiper-slide-active
+// 					.roadmap
+// 						&__info
+// 							&:before
+// 								background: linear-gradient(90deg, rgba(104, 112, 255, 0.2) 0%, #6870FF 50%, rgba(104, 112, 255, 0.2) 100%)
