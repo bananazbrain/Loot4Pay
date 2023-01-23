@@ -3,6 +3,12 @@ const body = document.querySelector('body');
 const inner = document.querySelector('.inner');
 
 document.addEventListener('DOMContentLoaded', function () {
+  // FANCYBOX SETUP
+  Fancybox.bind("[data-fancybox]", {
+    dragToClose: false,
+    autoFocus: false,
+  });
+
   // ANIMATION
   let anBlocks = document.querySelectorAll('.an');
 

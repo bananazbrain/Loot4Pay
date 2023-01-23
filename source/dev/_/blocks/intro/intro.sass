@@ -65,6 +65,9 @@
 			right: 80px
 			height: 220px
 			background: var(--pink)
+		&.--items
+			&:before, &:after
+				display: none
 	&__video
 		border-radius: var(--border)
 		overflow: hidden
@@ -90,6 +93,88 @@
 			position: relative
 		&:hover
 			border-color: var(--purple)
+
+	&__item
+		z-index: 1
+		transition: var(--transition)
+		position: absolute
+		&:nth-of-type(1)
+			top: -40px
+			animation: item-top 4.5s ease-in-out infinite alternate
+			&:before
+				z-index: -1
+				top: 150px
+				left: 60px
+				width: 210px
+				height: 22px
+				border-radius: 100%
+				background: #6108A8
+				transform: rotate(-45deg)
+				filter: blur(48px)
+				-webkit-filter: blur(48px)
+				position: absolute
+				content: ""
+		&:nth-of-type(2)
+			top: -90px
+			right: -50px
+			animation: item-top 4.5s ease-in-out infinite alternate
+			&:before
+				z-index: -1
+				top: 120px
+				right: 150px
+				width: 194px
+				height: 18px
+				border-radius: 100%
+				background: linear-gradient(91.23deg, #F37AFD 6.24%, #4053FF 51.05%)
+				transform: rotate(30deg)
+				filter: blur(40px)
+				-webkit-filter: blur(40px)
+				position: absolute
+				content: ""
+		&:nth-of-type(3)
+			top: 60px
+			left: 60px
+			animation: item-bottom 4.5s ease-in-out infinite alternate
+			&:before
+				z-index: -1
+				top: 80px
+				left: 100px
+				width: 250px
+				height: 186px
+				border-radius: 100%
+				background: var(--blue)
+				filter: blur(180px)
+				-webkit-filter: blur(180px)
+				position: absolute
+				content: ""
+		&:nth-of-type(4)
+			top: 60px
+			right: 12px
+			animation: item-bottom 4.5s ease-in-out infinite alternate
+			&:before
+				z-index: -1
+				top: 165px
+				right: 155px
+				width: 112px
+				height: 112px
+				border-radius: 100%
+				background: linear-gradient(180deg, #FDD67A 0%, #FDD67A 0.01%, #FF4040 100%)
+				filter: blur(60px)
+				-webkit-filter: blur(60px)
+				position: absolute
+				content: ""
+			&:after
+				z-index: -1
+				top: 0
+				right: 0
+				width: 247px
+				height: 220px
+				border-radius: 100%
+				background: var(--pink)
+				filter: blur(280px)
+				-webkit-filter: blur(280px)
+				position: absolute
+				content: ""
 
 .games
 	&__title
@@ -125,6 +210,18 @@
 		border-radius: var(--border-sm)
 		overflow: hidden
 
+@keyframes item-top
+	0%
+		transform: translateZ(0) rotateY(0deg) rotate(0deg)
+	100%
+		transform: translate3d(0,3%,-20px) rotateY(12deg) rotate(-6deg)
+
+@keyframes item-bottom
+	0%
+		transform: translateZ(0) rotateY(0deg) rotate(0deg)
+	100%
+		transform: translate3d(0,3%,-20px) rotateY(12deg) rotate(6deg)
+
 @media screen and (max-width: 1460px)
 	.intro
 		&__main
@@ -135,10 +232,22 @@
 		&__preview
 			max-width: 560px
 			margin-left: auto
+			&.--items
+				top: 0
+				right: 0
+				max-width: 650px
+				position: absolute
 		&__video
 			img
 				width: 100%
 				height: 100%
+		&__item
+			img
+				transform: scale(.9)
+			&:nth-of-type(1)
+				left: 20px
+			&:nth-of-type(3)
+				left: 40px
 
 @media screen and (max-width: 1280px)
 	.intro
@@ -164,6 +273,19 @@
 		&__preview
 			max-width: 670px
 			margin-right: auto
+			&.--items
+				margin-top: 50px
+				min-height: 500px
+				position: relative
+		&__item
+			img
+				transform: none
+			&:nth-of-type(1)
+				left: -20px
+			&:nth-of-type(2)
+				right: -70px
+			&:nth-of-type(3)
+				left: 20px
 
 @media screen and (max-width: 991px)
 	.intro
@@ -175,6 +297,10 @@
 		&__text
 			font-size: 18px
 			line-height: 28px
+		&__preview
+			&.--items
+				margin-top: 70px
+				min-height: 520px
 
 @media screen and (max-width: 767px)
 	.intro
@@ -186,11 +312,30 @@
 			line-height: 26px
 		&__preview
 			max-width: 500px
+			&.--items
+				margin-top: 50px
+				min-height: 470px
 		&__play
 			width: 84px
 			height: 84px
 			img
 				width: 25px
+		&__item
+			img
+				transform: scale(.85)
+			&:nth-of-type(1)
+				left: -30px
+			&:nth-of-type(2)
+				img
+					transform: scale(.8)
+			&:nth-of-type(3)
+				left: -10px
+				img
+					transform: scale(.8) rotate(10deg)
+			&:nth-of-type(4)
+				right: -20px
+				img
+					transform: scale(.8)
 
 	.games
 		&__title
@@ -223,6 +368,34 @@
 			height: 80px
 			img
 				width: 22px
+		&__preview
+			&.--items
+				min-height: 44s0px
+		&__item
+			img
+				transform: scale(.75)
+			&:nth-of-type(1)
+				top: -50px
+				left: -50px
+			&:nth-of-type(2)
+				top: -130px
+				right: -105px
+				img
+					transform: scale(.6)
+			&:nth-of-type(3)
+				top: 40px
+				left: -50px
+				img
+					transform: scale(.65) rotate(5deg)
+			&:nth-of-type(4)
+				top: 30px
+				right: -110px
+				img
+					transform: scale(.65) rotate(10deg)
+				&:before
+					width: 80px
+					height: 80px
+					right: 170px
 
 	.games
 		&__title

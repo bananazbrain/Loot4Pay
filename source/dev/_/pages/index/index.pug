@@ -17,11 +17,22 @@ block content
 							.btn__border
 						a.intro__btn.btn.--border(href="") Product
 							.btn__border
-				.intro__preview.an.fadeIn-scaleFrom
-					.intro__video
-						img(src="_/uploads/video-img.png" srcset="_/uploads/video-img-x2.png 2x", alt="" width="670" height="400")
-					.intro__play
-						img(src="_/uploads/icons/play.svg", alt="")
+				//- .intro__preview.an.fadeIn-scaleFrom
+				//- 	.intro__video
+				//- 		img(src="_/uploads/video-img.png" srcset="_/uploads/video-img-x2.png 2x", alt="" width="670" height="400")
+				//- 	a.intro__play(data-fancybox href="https://youtu.be/jfKfPfyJRdk")
+				//- 		img(src="_/uploads/icons/play.svg", alt="")
+				.intro__preview.--items.an.fadeIn-scaleFrom
+					.intro__list
+						.intro__item
+							img(src="_/uploads/intro-1.png", alt="")
+						.intro__item
+							img(src="_/uploads/intro-2.png", alt="")
+						.intro__item
+							img(src="_/uploads/intro-3.png", alt="")
+						.intro__item
+							img(src="_/uploads/intro-4.png", alt="")
+							
 			.intro__games.games.tac
 				.games__title.h3.title-grad-purple.an.fadeIn-up #[h3 Building social metaverse network for gamers]
 				.games__subtitle.an.fadeIn-up(data-timeout="0.1s") Works with 200+ games
