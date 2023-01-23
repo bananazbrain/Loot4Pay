@@ -152,11 +152,22 @@
     height: 100%;
   }
 }
-@media screen and (max-width: 389px) {
+@media screen and (max-width: 409px) {
   .token__note {
-    font-size: 13px;
+    margin-top: 35px;
+    padding: 16px 12px 10px;
+    position: relative;
+    justify-content: center;
   }
-  .token__note u {
+  .token__note-text {
+    text-align: center;
+  }
+  .token__note-text u {
+    top: -10px;
+    left: 50%;
     font-size: 12px;
+    margin-right: 0;
+    transform: translateX(-50%);
+    position: absolute;
   }
 }

@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let roadmapSliderSwiper = new Swiper(roadmapSlider, {
       slidesPerView: 'auto',
       slideToClickedSlide: true,
-      initialSlide: 1,
+      initialSlide: 2,
       slidesOffsetBefore: 281,
       slidesOffsetAfter: 546,
       speed: 1000,

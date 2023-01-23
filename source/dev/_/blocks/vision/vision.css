@@ -404,11 +404,24 @@
     font-size: 12px;
   }
 }
-@media screen and (max-width: 389px) {
+@media screen and (max-width: 409px) {
   .table {
     overflow-x: scroll;
     border-radius: 0;
     background: transparent;
+    scrollbar-width: thin;
+  }
+  .table::-webkit-scrollbar {
+    height: 4px;
+    border-radius: 5px;
+  }
+  .table::-webkit-scrollbar-track {
+    background: #121521;
+    border-radius: 5px;
+  }
+  .table::-webkit-scrollbar-thumb {
+    background: var(--purple);
+    border-radius: 5px;
   }
   .table:before {
     display: none;

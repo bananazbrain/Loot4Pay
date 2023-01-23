@@ -358,11 +358,21 @@
 			strong
 				font-size: 12px
 
-@media screen and (max-width: 389px)
+@media screen and (max-width: 409px)
 	.table
 		overflow-x: scroll
 		border-radius: 0
 		background: transparent
+		scrollbar-width: thin
+		&::-webkit-scrollbar
+			height: 4px
+			border-radius: 5px
+		&::-webkit-scrollbar-track
+			background: #121521
+			border-radius: 5px
+		&::-webkit-scrollbar-thumb
+			background: var(--purple)
+			border-radius: 5px
 		&:before
 			display: none
 		&__wrap

@@ -488,7 +488,7 @@
     margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 389px) {
+@media screen and (max-width: 409px) {
   .intro__btns {
     flex-direction: column;
   }
