@@ -2,12 +2,12 @@ const html = document.querySelector('html');
 const body = document.querySelector('body');
 const inner = document.querySelector('.inner');
 
-document.addEventListener('DOMContentLoaded', function () {
+window.onload = () => {
   // FANCYBOX SETUP
-  Fancybox.bind("[data-fancybox]", {
-    dragToClose: false,
-    autoFocus: false,
-  });
+  // Fancybox.bind("[data-fancybox]", {
+  //   dragToClose: false,
+  //   autoFocus: false,
+  // });
 
   // ANIMATION
   let anBlocks = document.querySelectorAll('.an');
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let roadmapSliderSwiper = new Swiper(roadmapSlider, {
       slidesPerView: 'auto',
       slideToClickedSlide: true,
-      initialSlide: 2,
+      initialSlide: 3,
       slidesOffsetBefore: 281,
       slidesOffsetAfter: 546,
       speed: 1000,
@@ -94,12 +94,10 @@ document.addEventListener('DOMContentLoaded', function () {
       breakpoints: {
         0: {
           centeredSlides: true,
-          initialSlide: 0,
           slidesOffsetBefore: 0,
           slidesOffsetAfter: 0,
         },
         992: {
-          initialSlide: 1,
           slidesOffsetAfter: 374,
           slidesOffsetBefore: 273,
         },
@@ -110,4 +108,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-})
+}

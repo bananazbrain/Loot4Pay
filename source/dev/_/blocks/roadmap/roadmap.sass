@@ -6,7 +6,9 @@
 		position: relative
 		&:before
 			top: 121px
-			width: 100%
+			left: 50%
+			transform: translateX(-50%)
+			width: 120%
 			height: 4px
 			background: linear-gradient(90deg, rgba(104, 112, 255, 0) 0%, #6870FF 49.71%, rgba(104, 112, 255, 0) 100%)
 			position: absolute
@@ -45,14 +47,7 @@
 				.roadmap
 					&__info
 						&:before
-							top: 27px
-							left: 0
-							width: 100%
-							height: 4px
-							background: linear-gradient(90deg, rgba(104, 112, 255, 0.5) 10%, #6870FF 50%, rgba(104, 112, 255, 0.5) 90%)
-							transition: .5s
-							position: absolute
-							content: ""
+							opacity: 1
 					&__icon
 						width: 24px
 						height: 26px
@@ -67,6 +62,17 @@
 	&__info
 		padding: 56px 38px 0
 		position: relative
+		&:before
+			opacity: 0
+			top: 27px
+			left: 0
+			width: 100%
+			height: 4px
+			background: linear-gradient(90deg, rgba(104, 112, 255, 0.5) 10%, #6870FF 50%, rgba(104, 112, 255, 0.5) 90%)
+			transition: var(--transition)
+			position: absolute
+			content: ""
+
 	&__icon
 		z-index: 1
 		top: 18px

@@ -25,13 +25,21 @@ block content
 				.intro__preview.--items.an.fadeIn-scaleFrom
 					.intro__list
 						.intro__item
-							img(src="_/uploads/intro-1.png", alt="")
+							picture
+								source(srcset="_/uploads/intro-1.webp" type="image/webp")
+								img(src="_/uploads/intro-1.png", alt="")
 						.intro__item
-							img(src="_/uploads/intro-2.png", alt="")
+							picture
+								source(srcset="_/uploads/intro-2.webp" type="image/webp")
+								img(src="_/uploads/intro-2.png", alt="")
 						.intro__item
-							img(src="_/uploads/intro-3.png", alt="")
+							picture
+								source(srcset="_/uploads/intro-3.webp" type="image/webp")
+								img(src="_/uploads/intro-3.png", alt="")
 						.intro__item
-							img(src="_/uploads/intro-4.png", alt="")
+							picture
+								source(srcset="_/uploads/intro-4.webp" type="image/webp")
+								img(src="_/uploads/intro-4.png", alt="")
 							
 			.intro__games.games.tac
 				.games__title.h3.title-grad-purple.an.fadeIn-up #[h3 Building social metaverse network for gamers]
@@ -39,7 +47,7 @@ block content
 				.games__list.row.an.fadeIn-up(data-timeout="0.15s")
 					mixin games(img)
 						.games__item
-							img(src=img, alt="" width="40" height="40")
+							img(src=img, alt="" width="40" height="40" loading="lazy")
 					+games('_/uploads/game-1.svg')
 					+games('_/uploads/game-2.svg')
 					+games('_/uploads/game-3.svg')
@@ -64,12 +72,12 @@ block content
 					.ex__top EXAMPLE
 					.ex__wrap.row
 						.ex__logo
-							img(src="_/uploads/vision-logo.svg", alt="" width="236" height="90")
+							img(src="_/uploads/vision-logo.svg", alt="" width="236" height="90" loading="lazy")
 						.ex__info
 							.ex__price $ 170,000,000
 							.ex__text Average daily gold turnover in game					
 					.ex__bg.bg-img
-						img(src="_/uploads/vision-img.jpg" srcset="_/uploads/vision-img-x2.jpg 2x", alt="")
+						img(src="_/uploads/vision-img.jpg" srcset="_/uploads/vision-img-x2.jpg 2x", alt="" loading="lazy")
 				.vision__table.table
 					.table__wrap
 						.table__col.--feat
@@ -111,80 +119,80 @@ block content
 				.b-head__title.h2.title-grad-light.an.fadeIn-up #[h2 Upcoming improvements]
 				.b-head__text.tac.an.fadeIn-up(data-timeout="0.1s") We aim to keep constantly improving our service and adding new features. Our goal is creating a metaverse for gamers, which will encompass all gaming worlds. We will make Loot4Pay the go-to place  among all gamers for anything you might need in ANY game.
 			.feat__main
-				.feat__list
-					.feat__item.an.fadeIn
+				.feat__list.an.fadeIn
+					.feat__item
 						.feat__preview.--corner
 							.feat__img
-								img(src="_/uploads/feat-1.png" srcset="_/uploads/feat-1-x2.png 2x", alt="")
+								img(src="_/uploads/feat-1.png" srcset="_/uploads/feat-1-x2.png 2x", alt="" loading="lazy")
 						.feat__info
 							.feat__icon
-								img(src="_/uploads/feat-1-icon.svg", alt="" width="48" height="48")
+								img(src="_/uploads/feat-1-icon.svg", alt="" width="48" height="48" loading="lazy")
 							.feat__name Automation skins trade
 							.feat__text Implementation of special functionality that will allow people to trade in-game skins in Dota 2 and CS:GO games automatically. It will save seller’s and buyer’s time and make their user experience super enjoyable.
 						.feat__poly
 							
-					.feat__item.an.fadeIn.decor
+					.feat__item
 						.feat__preview
 							.feat__img
-								img(src="_/uploads/feat-2.png" srcset="_/uploads/feat-2-x2.png 2x", alt="")
+								img(src="_/uploads/feat-2.png" srcset="_/uploads/feat-2-x2.png 2x", alt="" loading="lazy")
 						.feat__info
 							.feat__icon
-								img(src="_/uploads/feat-2-icon.svg", alt="" width="48" height="48")
+								img(src="_/uploads/feat-2-icon.svg", alt="" width="48" height="48" loading="lazy")
 							.feat__name Paid Features
 							.feat__text We will introduce the possibility for the sellers to advertise and customize their offers for a fee. This will help new merchants to gain a foothold on the #[br]platform.
 						.feat__poly
 
-					.feat__item.an.fadeIn.decor.--pink
+					.feat__item
 						.feat__preview
 							.feat__img
-								img(src="_/uploads/feat-3.png" srcset="_/uploads/feat-3-x2.png 2x", alt="")
+								img(src="_/uploads/feat-3.png" srcset="_/uploads/feat-3-x2.png 2x", alt="" loading="lazy")
 						.feat__info
 							.feat__icon
-								img(src="_/uploads/feat-3-icon.svg", alt="" width="48" height="48")
+								img(src="_/uploads/feat-3-icon.svg", alt="" width="48" height="48" loading="lazy")
 							.feat__name Presentation of the lottery
 							.feat__text Tickets, required to participate in the lottery, can be purchased only with L4P token. The more tickets one has, the higher the chance of the victory.
 						.feat__poly
 
-					.feat__item.an.fadeIn.decor.--pink
+					.feat__item
 						.feat__preview
 							.feat__img
-								img(src="_/uploads/feat-4.png" srcset="_/uploads/feat-4-x2.png 2x", alt="")
+								img(src="_/uploads/feat-4.png" srcset="_/uploads/feat-4-x2.png 2x", alt="" loading="lazy")
 						.feat__info
 							.feat__icon
-								img(src="_/uploads/feat-4-icon.svg", alt="" width="48" height="48")
+								img(src="_/uploads/feat-4-icon.svg", alt="" width="48" height="48" loading="lazy")
 							.feat__name Teammate Live Search
 							.feat__text We will implement a live search function. Placing orders to find teammate, professional or mentor will be just as easy as calling a taxi using a phone app.
 						.feat__poly
 
-					.feat__item.an.fadeIn.decor
+					.feat__item
 						.feat__preview
 							.feat__img
-								img(src="_/uploads/feat-5.png" srcset="_/uploads/feat-5-x2.png 2x", alt="")
+								img(src="_/uploads/feat-5.png" srcset="_/uploads/feat-5-x2.png 2x", alt="" loading="lazy")
 						.feat__info
 							.feat__icon
-								img(src="_/uploads/feat-5-icon.svg", alt="" width="48" height="48")
+								img(src="_/uploads/feat-5-icon.svg", alt="" width="48" height="48" loading="lazy")
 							.feat__name Metaverse for Gaming
 							.feat__text Loot4Pay will become a complete social network for gamers. They will be able to use it to locate other people with similar interests and find new friends to play with or discuss any game related topic.
 						.feat__poly
 
-					.feat__item.an.fadeIn.decor.--pink
+					.feat__item
 						.feat__preview.--corner
 							.feat__img
-								img(src="_/uploads/feat-6.png" srcset="_/uploads/feat-6-x2.png 2x", alt="")
+								img(src="_/uploads/feat-6.png" srcset="_/uploads/feat-6-x2.png 2x", alt="" loading="lazy")
 						.feat__info
 							.feat__icon
-								img(src="_/uploads/feat-6-icon.svg", alt="" width="48" height="48")
+								img(src="_/uploads/feat-6-icon.svg", alt="" width="48" height="48" loading="lazy")
 							.feat__name Streaming Platform
 							.feat__text Adding a streaming service similar to Twitch.tv. Live streaming is an integral part of gaming culture and we we are going to use it to our advantage.
 						.feat__poly
 
-					.feat__item.an.fadeIn.decor
+					.feat__item
 						.feat__preview.--bottom
 							.feat__img
-								img(src="_/uploads/feat-7.png" srcset="_/uploads/feat-7-x2.png 2x", alt="")
+								img(src="_/uploads/feat-7.png" srcset="_/uploads/feat-7-x2.png 2x", alt="" loading="lazy")
 						.feat__info
 							.feat__icon
-								img(src="_/uploads/feat-7-icon.svg", alt="" width="48" height="48")
+								img(src="_/uploads/feat-7-icon.svg", alt="" width="48" height="48" loading="lazy")
 							.feat__name continuous Interface Improvement
 							.feat__text Updating the user interface is high on our priority list. A quality UI/UX is important for both the overall user experience and presentation. We will never stop improving it.
 						.feat__poly
@@ -205,12 +213,12 @@ block content
 						.token__list
 							.token__item
 								.token__icon
-									img(src="_/uploads/token-1-icon.svg", alt="" width="43" height="43")
+									img(src="_/uploads/token-1-icon.svg", alt="" width="43" height="43" loading="lazy")
 								.token__name.h4 #[h4 Token Utility]
 								.token__text The Loot4Pay token will be used to pay for goods and services provided by the sellers using our marketplace, as well as for other miscellaneous purchases like pins and customization for offers, lottery tickets etc. We are going to introduce an 8-15% discount for all transactions made using the l4p token. We will continue to grow the platform to provide additional spending opportunities, adding value to the token.
 							.token__item
 								.token__icon
-									img(src="_/uploads/token-2-icon.svg", alt="" width="43" height="43")
+									img(src="_/uploads/token-2-icon.svg", alt="" width="43" height="43" loading="lazy")
 								.token__name.h4 #[h4 Token Burning]
 								.token__text All of the additional options offered by marketplace will be available for purchase exclusively via our token, and half tokens we get this way will be burned every month to decrease circulating supply. In addition, 10% of tokens acquired from purchases of additional features as well as lottery tickets will also be burned, to reduce the total amount in circulation.
 						a.token__note(href="") 
@@ -233,6 +241,16 @@ block content
 			.roadmap__main.an.fadeIn-up
 				.roadmap__slider.swiper
 					.roadmap__slider-wrap.swiper-wrapper
+						.roadmap__slider-slide.swiper-slide
+							.roadmap__info
+								.roadmap__icon
+								.roadmap__name.h5 #[h5 Marketplace Launch]
+								.roadmap__date March, 2021
+							.roadmap__border
+								.roadmap__border-item
+								.roadmap__border-item
+								.roadmap__border-item
+								.roadmap__border-item
 						.roadmap__slider-slide.swiper-slide
 							.roadmap__info
 								.roadmap__icon
@@ -293,6 +311,56 @@ block content
 								.roadmap__border-item
 								.roadmap__border-item
 								.roadmap__border-item
+						.roadmap__slider-slide.swiper-slide
+							.roadmap__info
+								.roadmap__icon
+								.roadmap__name.h5 #[h5 Paid Features]
+								.roadmap__date 1st quarter 2024
+							.roadmap__border
+								.roadmap__border-item
+								.roadmap__border-item
+								.roadmap__border-item
+								.roadmap__border-item
+						.roadmap__slider-slide.swiper-slide
+							.roadmap__info
+								.roadmap__icon
+								.roadmap__name.h5 #[h5 Customized Orders]
+								.roadmap__date 1st quarter 2024
+							.roadmap__border
+								.roadmap__border-item
+								.roadmap__border-item
+								.roadmap__border-item
+								.roadmap__border-item
+						.roadmap__slider-slide.swiper-slide
+							.roadmap__info
+								.roadmap__icon
+								.roadmap__name.h5 #[h5 Live #[br] Search]
+								.roadmap__date 2nd quarter 2024
+							.roadmap__border
+								.roadmap__border-item
+								.roadmap__border-item
+								.roadmap__border-item
+								.roadmap__border-item
+						.roadmap__slider-slide.swiper-slide
+							.roadmap__info
+								.roadmap__icon
+								.roadmap__name.h5 #[h5 Metaverse for Gaming]
+								.roadmap__date 3rd quarter 2024
+							.roadmap__border
+								.roadmap__border-item
+								.roadmap__border-item
+								.roadmap__border-item
+								.roadmap__border-item
+						.roadmap__slider-slide.swiper-slide
+							.roadmap__info
+								.roadmap__icon
+								.roadmap__name.h5 #[h5 Streaming Platform]
+								.roadmap__date 4th quarter 2024
+							.roadmap__border
+								.roadmap__border-item
+								.roadmap__border-item
+								.roadmap__border-item
+								.roadmap__border-item
 					.roadmap__arrows.row
 						.roadmap__arrow.swiper-button-prev
 							.swiper-border
@@ -301,7 +369,9 @@ block content
 							.swiper-border
 							<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.258013 0.838811C-0.0348802 1.1317 -0.0348802 1.60658 0.258013 1.89947L6.35926 8.00072L0.258013 14.102C-0.0348802 14.3949 -0.0348802 14.8697 0.258013 15.1626C0.550906 15.4555 1.02578 15.4555 1.31867 15.1626L7.95025 8.53105C8.24315 8.23816 8.24315 7.76328 7.95025 7.47039L1.31867 0.838811C1.02578 0.545917 0.550906 0.545917 0.258013 0.838811Z" fill="white"/></svg>
 		.roadmap__bg
-			img(src="_/uploads/roadmap-bg.jpg", alt="" width="1920" height="800")
+			picture
+				source(srcset="_/uploads/roadmap-bg.webp" type="image/webp")
+				img(src="_/uploads/roadmap-bg.jpg", alt="" width="1920" height="800" loading="lazy")
 		.anchore__link#roadmap
 
 	+style('team', 'blocks')
@@ -318,18 +388,20 @@ block content
 					mixin team(img, name, duty)
 						.team__item
 							.team__img.cover
-								img(src=img, alt="")
+								img(src=img, alt="" loading="lazy")
 							.team__name=name
 							.team__duty=duty
-					+team('_/uploads/team-1.png', 'Grigoriy Atbashiyan', 'Chief Executive Officer')
-					+team('_/uploads/team-2.png', 'Viktor Falikov', 'Chief technical officer')
-					+team('_/uploads/team-3.png', 'Anton Olashyn', 'Chief Design Officer')
-					+team('_/uploads/team-1.png', 'Pavel Pivak', 'Chief Marketing Officer')
-					+team('_/uploads/team-2.png', 'Anton Plotnikov', 'Chief SERVICES Officer')
-					+team('_/uploads/team-3.png', 'Alex Tyutyunnik', 'Chief Operations Officer')
+					+team('_/uploads/team-1.png', 'Grigoriy Atbashiyan', 'CO-FOUNDER/CEO')
+					+team('_/uploads/team-2.png', 'Viktor Falikov', 'CO-FOUNDER/CTO')
+					+team('_/uploads/team-3.png', 'Alex Tyutyunnik', 'CO-FOUNDER/COO')
+					+team('_/uploads/team-4.png', 'Pavel Pivak', 'MARKETING EXECUTIVE')
+					+team('_/uploads/team-5.png', 'Anton Olashyn', 'LEAD DESIGNER')
+					+team('_/uploads/team-6.png', 'Dmitriy Plotnikov', 'LEAD DEVELOPER')
 			.team__border
 		.team__bg
-			img(src="_/uploads/team-bg.png", alt="" width="1920" height="1384")
+			picture
+				source(srcset="_/uploads/team-bg.webp" type="image/webp")
+				img(src="_/uploads/team-bg.png", alt="" width="1920" height="1384" loading="lazy")
 		.anchore__link#team
 
 	+style('join', 'blocks')
@@ -337,12 +409,14 @@ block content
 		.case
 			.join__wrap.tac
 				.join__img.an.fadeIn-scaleFrom
-					img(src="_/uploads/join-logo.svg", alt="")
+					img(src="_/uploads/join-logo.svg", alt="" loading="lazy")
 				.join__title.h2.an.fadeIn-up #[h2 Join us and let’s change the world with Loot4Pay]
 				.join__btn-wrap.an.fadeIn-up(data-timeout="0.1s")
 					a.join__btn.btn.--grad(href="") Whitepaper
 						.btn__border
 				.join__stars
-					img(src="_/uploads/stars.svg", alt="").an.fadeIn
+					img(src="_/uploads/stars.svg", alt="" loading="lazy").an.fadeIn
 				.join__decor
-					img(src="_/uploads/join-bg.png", alt="").an.fadeIn-scaleFrom
+					picture
+						source(srcset="_/uploads/join-bg.webp" type="image/webp")
+						img(src="_/uploads/join-bg.png", alt="" loading="lazy").an.fadeIn-scaleFrom
