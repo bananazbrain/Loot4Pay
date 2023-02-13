@@ -2,7 +2,7 @@ const html = document.querySelector('html');
 const body = document.querySelector('body');
 const inner = document.querySelector('.inner');
 
-window.onload = () => {
+document.addEventListener('DOMContentLoaded', function () {
   // FANCYBOX SETUP
   // Fancybox.bind("[data-fancybox]", {
   //   dragToClose: false,
@@ -108,4 +108,4 @@ window.onload = () => {
     });
   }
 
-}
+})
