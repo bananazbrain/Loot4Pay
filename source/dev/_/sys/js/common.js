@@ -3,6 +3,12 @@ const body = document.querySelector('body');
 const inner = document.querySelector('.inner');
 
 document.addEventListener('DOMContentLoaded', function () {
+  var loadLater = document.querySelector('.loadLater');
+  var head = document.querySelector('head');
+  if (loadLater && head) {
+    head.insertAdjacentHTML('beforeend', loadLater.innerHTML);
+  }
+
   // FANCYBOX SETUP
   // Fancybox.bind("[data-fancybox]", {
   //   dragToClose: false,
